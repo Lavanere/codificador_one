@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador One</title>
+    <link rel="stylesheet" href="./stilo/style.css">
+    <link rel="stylesheet" href= "stilo/mobile.css">
+</head>
+<body>
+    
+    <header id="cabecalho">
+        <img src="./img/logo_alura.png" alt="Logo Alura" class="logo">
+        <h1 class="cabecalho_titulo">DECODIFICADOR ONE</h1>
+    </header>
+    
+    <main id="principal">
+        <section class="principal_input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite seu texto"></textarea> 
+            </div>
+            <div class="anterior_botao">
+                <img src="./img/icone_atencao.png" alt="Icone Atenção" class="img_atencao">
+                <p>Apenas letras maiúsculas e sem acento</p>
+            </div>
+            <div class="botao">
+                <button onclick="cripto()" class="btn_cripto">Criptografar</button>
+                <button onclick="descripto()" class="btn_descripto">Descriptografar</button>
+            </div>
+        </section>
+        
+        <section id="output">
+            <img src="./img/img_output.png" alt="Imagem Output" class="img_output"/>
+            <h2 class="output_h2">Nenhuma mensagem por enquanto!</h2>
+            <span class="output_span">Digite o texto que deseja criptografar ou descriptografar.</span>
+        </section>
+    </main>
+        
+    <footer id="rodape">
+        <div class="icones">
+            <a href="https://www.youtube.com"><ion-icon name="logo-youtube" ></ion-icon></a>
+            <a href="https://www.instagram.com"><ion-icon name="logo-instagram" ></ion-icon></a>
+            <a href="https://www.github.com"><ion-icon name="logo-github" ></ion-icon></a>
+        </div>
+
+        <h3 class="rodape_h3">Desenvolvido por Michel L. Sampaio</h3>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
